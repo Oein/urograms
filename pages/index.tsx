@@ -1,9 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import { Grid, Navbar, Text } from "@nextui-org/react";
+import Program from "../components/program";
 
 export default function Home() {
   return (
@@ -14,110 +11,66 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
+      <Navbar variant="static" isCompact>
+        <Navbar.Brand>
+          <Text b color="inherit">
+            Urograms
+          </Text>
+        </Navbar.Brand>
+      </Navbar>
+      <main>
+        <Text size="$4xl">For Windows (x64)</Text>
+        <Grid.Container>
+          <Grid xs={4} css={{ p: "$3" }}>
+            <Program
+              logo="https://github.com/Oein/Urograms_static/raw/main/3dp_logo.png"
+              name="3DP Chip"
+              desc="드라이버를 손쉽게 다운받을 수 있어요"
+              down="https://github.com/Oein/Urograms_static/raw/main/3dp.exe"
+              site="3dpchip.com"
             />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+          </Grid>
+          <Grid xs={4} css={{ p: "$3" }}>
+            <Program
+              logo="https://github.com/Oein/Urograms_static/raw/main/fdm_logo.png"
+              name="FDM"
+              desc="빠르게 파일들을 다운받을 수 있어요"
+              down="https://github.com/Oein/Urograms_static/raw/main/fdm.exe"
+              site="freedownloadmanager.org"
+            />
+          </Grid>
+          <Grid xs={4} css={{ p: "$3" }}>
+            <Program
+              logo="https://github.com/Oein/Urograms_static/raw/main/brave_logo.png"
+              name="Brave"
+              desc="광고없이 3배 빠르게 인터넷을 사용할 수 있어요"
+              down="https://referrals.brave.com/latest/BraveBrowserSetup.exe"
+              site="brave.com"
+            />
+          </Grid>
+        </Grid.Container>
+        <Text size="$3xl">For Windows Developers</Text>
+        <Grid.Container>
+          <Grid xs={4} css={{ p: "$3" }}>
+            <Program
+              logo="https://github.com/Oein/Urograms_static/raw/main/vsc_logo.png"
+              name="Visual Studio Code"
+              desc="모두를 위한 IDE"
+              down="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
+              site="code.visualstudio.com"
+            />
+          </Grid>
+          <Grid xs={4} css={{ p: "$3" }}>
+            <Program
+              logo="https://github.com/Oein/Urograms_static/raw/main/git_logo.png"
+              name="Git (2.39.0)"
+              desc="쉽게 버전을 관리 할 수 있어요"
+              down="https://github.com/git-for-windows/git/releases/download/v2.39.0.windows.1/Git-2.39.0-64-bit.exe"
+              site="git-scm.com"
+            />
+          </Grid>
+        </Grid.Container>
       </main>
     </>
-  )
+  );
 }
