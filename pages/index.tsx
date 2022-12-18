@@ -24,7 +24,7 @@ export default function Home() {
           <Grid xs={4} css={{ p: "$3" }}>
             <Program
               logo="https://github.com/Oein/Urograms_static/raw/main/3dp_logo.png"
-              name="3DP Chip"
+              name="3DP Chip (2211)"
               desc="드라이버를 손쉽게 다운받을 수 있어요"
               down="https://github.com/Oein/Urograms_static/raw/main/3dp.exe"
               site="3dpchip.com"
@@ -33,7 +33,7 @@ export default function Home() {
           <Grid xs={4} css={{ p: "$3" }}>
             <Program
               logo="https://github.com/Oein/Urograms_static/raw/main/fdm_logo.png"
-              name="FDM"
+              name="FDM (6.18.1)"
               desc="빠르게 파일들을 다운받을 수 있어요"
               down="https://github.com/Oein/Urograms_static/raw/main/fdm.exe"
               site="freedownloadmanager.org"
@@ -42,7 +42,7 @@ export default function Home() {
           <Grid xs={4} css={{ p: "$3" }}>
             <Program
               logo="https://github.com/Oein/Urograms_static/raw/main/brave_logo.png"
-              name="Brave"
+              name="Brave (Latest)"
               desc="광고없이 3배 빠르게 인터넷을 사용할 수 있어요"
               down="https://referrals.brave.com/latest/BraveBrowserSetup.exe"
               site="brave.com"
@@ -54,7 +54,7 @@ export default function Home() {
           <Grid xs={4} css={{ p: "$3" }}>
             <Program
               logo="https://github.com/Oein/Urograms_static/raw/main/vsc_logo.png"
-              name="Visual Studio Code"
+              name="Visual Studio Code (Latest)"
               desc="모두를 위한 IDE에요"
               down="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
               site="code.visualstudio.com"
