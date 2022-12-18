@@ -55,7 +55,7 @@ export default function Home() {
             <Program
               logo="https://github.com/Oein/Urograms_static/raw/main/vsc_logo.png"
               name="Visual Studio Code"
-              desc="모두를 위한 IDE"
+              desc="모두를 위한 IDE에요"
               down="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
               site="code.visualstudio.com"
             />
